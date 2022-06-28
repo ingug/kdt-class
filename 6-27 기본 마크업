@@ -1,0 +1,32 @@
+<태그의 종류와 특징>
+1.<p>
+   -단락요소(내용글)
+   -기본css ->display: block; font-size , font-weight , margin(여백)
+  
+2.<h1>~<h6>
+   -헤드라인 (제목->목차(outline))
+   -기본css - > font-size , font-weight , margin
+   -웹접근성 -> 가장중요한 태그 목차(outline)
+   -스크린 리더기가 표현(구분)을 해준다 ex)
+   -하나의 html페이지에는 꼭!!! 한개의 <h1>가 존재한다 <h1>=> 사이트로고가 존재한다
+   -<h1>~<h6> => 꼭!! 하위 단계를 표현할때는 단계를 순차적으로 사용해야 한다
+
+3.<div>
+   -빈박스(상자) => 레이아웃을 구성하는 주 태그
+   -기본css-> margin(여백)을 가지고 있지않다
+
+4.<span> , <strong>, <em>
+   -특정의 키워드/단어/문장의 시각적인 표현이나 강조를 하기위한 요소
+   -<span>     css를 사용해서 시각적 표현((주관적 표현)
+   -<strong>    font-weight: bold;(강한강조)
+   -<em>        font-style: italic;(약한강조)
+기타
+   -<br>=>(enter)
+   -html 엔티티       엔티티 사이트 https://unicode-table.com/kr/html-entities/
+    &nbsp (space) , &copy(카피라이트)
+    <(&lt)   >&gt;  
+     &amp(&)
+     
+   ------------------------------
+ 
+     
