@@ -1,0 +1,74 @@
+가상 클래스의 앵커(a) 링크
+-<a> (inline 요소)
+-하이퍼링크->(태그중에서 가장 중요한 태그 1위) 
+-default css속성
+  -color: -webkit-link;/ cursor: pointer;/ text-decoration: underline;
+  -리더기가 읽어준다
+  -태그의 속성
+  -href="페이지주소" (링크) /
+  -tittle=>"링크설명글"(스크린리더기가 읽어준다-접근성)
+  -target="_blank"(새창/새탭) /blank(기본) , _blank=>제휴/family/타사이트
+        tittle=???"사이트가 새창에 열림" _blank 이면 tittle을 꼭 써줘야 된다
+  -상속시(css)-> text-decoratio/color는 영향을 받지 않는다
+  -<a>=> focus를 받을 수 잇는 요소
+ -가상클래스를 가지고 있다   가상클래스는 a태그만 가지고 있다
+  link:       => 최초 페이지가 열렸을때 상황(기본)
+  visited:    => 사용자가 과거에 링크를 선택한 적이 있을때 
+  hover:      => 현재 마우스 포인터 등으로 가리켜지고 있을때(롤오버)=>모든 태그가 사용 가능하다.
+  active:     => 현재 클릭되고 있을때
+  focus:      => 포커스를 받을떄
+  ex).link a:hover{text-decoration: underline; color: orange;}
+  -다운로드=>브라우저가 처리할 수 없는 파일의 종류를 href=""로 연결할때
+   -강제로 모든 파일을 다운로드 
+   ex)<a href="./images/a1.jpg" download="./a1.jpg">이미지파일 다운로드</a> 
+   id=> 점프메뉴 목적지 역할
+ -점프메뉴
+   -<태그id="아이디명">
+   -<a href="#아이디명">해당콘텐츠로이동</a>  <a href="#top">상단으로이동</a>
+   -태그의 속성을 사용한 결합자 ex) .link a[title]{color: red;}
+   ex).link a[href^="http://daum"]{color: black;}  (front)
+      .link a[href$=".com/"]{color: brown;}        (back)
+ -------------------------------------------------------------------------------------------------------
+ 목록 태그 <ul> <ol> <dl> 
+ <ul>
+  -순서없는 목록(unorder list) 
+  -<ul>의 직계 자식은 꼭!!! <li>만 올수 있다 
+  -<ul>/<li> => 블럭요소
+  -ul/li에서만 사용할 수 있는 속성
+    -list-style:disk(기본)square/circle/none(제거)
+  lst-style-type:disk(기본) square/circle/none(제거)
+  list-style:position:sutside(기본값)/inside ->블릿의 위치
+  list1{list-style-image:url(./images/icon.jpg);} 블릿을 이미지로
+  -<ul>은 중첩이 가능하다
+  -<li>는 div를 포함한 모든 븍럭요소를 자식으로 사용할 수 있다
+  <ul>
+                    <li>2depth 01
+                        <ul>
+                            <li>2depth 01</li>
+                            <li>2depth 02</li>
+                        </ul>
+                    </li>
+                    <li>2depth 02</li>
+                    <li>2depth 03</li>
+                </ul>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
