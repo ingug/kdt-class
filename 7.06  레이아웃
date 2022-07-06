@@ -1,0 +1,28 @@
+<레이아웃>
+-block요소들은 기본 정렬방식이 수직/상하 정렬 방식을 취하고 있고
+            이 블럭요소들의 정렬을 강제로 수평/좌우/ 정렬로 바꿀 경우가 있다
+-강제단 만드는 방법
+  1) float: left/right
+      -문제점 ; -float을 사용한 요소의 직계 부모요소에 문제가 생긴다
+                  (부모요소가 자식요소를 감싸지 못하는 문제가 생긴다
+      -해결방법 - 1. 부모태그에 overflow:hidden 요소를 쓴다 (최선책)
+                 2. 부모태그에 float:left (차선책)
+      -float을 사용하는/강제 단을 적용해야하는 요소에 width값(px/%)이 있으면
+         ->해결방법은 좌측단과 우측단에 위치하는 모든 요소(둘다~)에 float을 적용한다
+         ex) .box{width: 400px;border: 1px solid red;}
+             .box1{width: 200px; height: 400px; background: pink; float: left;}
+             .box2{width: 200px; height: 400px; background: green;  float: right;}
+         
+  2) clear:both
+      -강제단의 공간을 사용하지 않는다(공간해제/취소)
+  3) <div>/<ul>/<li>블럭요소를 추가한다
+      -무조건 1:1(1:1/1:다/다:다)를 만들어라
+      
+ ex) 1:다 .box{width: 400px; height: 600px;
+          border: 1px solid red; overflow: hidden;}
+         .box_con{width: 200px; float: left;}
+        
+        .box1{width: 200px; height: 600px; background: pink; }
+        .box2{width: 200px; height: 200px; background: green; float: right;}
+        .box3{width: 200px; height: 200px; background: blue; float: right;}
+        .box4{width: 200px; height: 200px; background: orange; float: right;}
