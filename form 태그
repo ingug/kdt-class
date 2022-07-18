@@ -1,0 +1,45 @@
+<form>
+ -웹개발 사용하는 요소
+ -폼요소들은 <form>태그가 모두 감싸고 있어야 한다(부모)=>블럭요소
+ -<form action="웹개발처리코드/문서" method="전송방식(get/post)">폼요소들</form>
+
+-폼요소들
+  -공통속성 
+        name="웹개발에서 사용되는 이름"  maxlength="최대글자수"
+        value="실제입력된 값/처리될값"
+  -모든 각각의 폼 요소들은 그에 상응하는 라벨(label)설명글을 가지고 있어야 한다(표준/접근성)
+  -<label="해당폼요소의 ID값">대표텍스트</label> =>인라인요소
+  -모두 인라인요소
+
+-<input type="text"> =>일반 텍스트입력상자
+-<input type="pssword"> =>패스워드 입력상자
+-<input type="radio">=>개중 1개선택상자(옵션버튼)
+    -2개이상의 라디오버튼을 사용하면 그룹을 만들어 주어야 개중 1개가 교대로 선택된다=>name속성 갑을 통일한다
+    -최초 1개가 선택되어 있어야 한다 =>checked="checked"/chedked
+    ex) <input type="radio" id="radio1" name="radioset" checked="checked"> (남자)
+        <input type="radio" id="radio2" name="radioset">  (여자)
+- <input type="checkbox">=>다중 선택 상자
+    -2개 이상일때 name속성 값을 동일/각각다르게 줄수 있다.
+-<input type="file">=>파일 찾기 상자를 띄운다(파일명.확장자)
+   ex) <input type="file" id="file" name="file">
+-<select name="grade" id="grade">
+    <option value="">학력선택</option>
+    <option value="1">고등학교</option>
+    <option value="2">전문대</option>
+    <option value="3">대학교</option>
+    <option value="4">대학원</option>
+  </select>
+-<textarea name="description" id="description" cols="열수(어비)" rows="6(행수)">자기소개를 50자 이내로 입력하세요</textarea>
+
+-***버튼의 종류
+  -<input type="submit" value="회원가입">  =>전송버튼(폼에전송)
+  -<input type="image" src="./submit.jpg" value="전 송">  =>전송버튼(폼에전송)
+  -<input type="reset" value="다시쓰기">   =>입력취소/다시쓰기
+  -<input type="button" value="다양한용도의 모양만 버튼">  =>일반버튼
+  
+ -전화번호 텍스트  라벨을 화면에서 안보이게 하는 방법
+  ex) .hidden{position: absolute; left: -1000%; top: 0; 
+         display: block; width: 1px; height: 1px; color: #fff; overflow: hidden;}
+  
+  
+  
