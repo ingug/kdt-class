@@ -1,0 +1,8 @@
+<IR=>IMAGE REPLACE(이미지교체)>
+  -실체는 text인데...시각적으로 이미지로 교체하여 보이게 하는 방법 => 웹접근성 향상
+  -링크<a>가 걸려있는 경우에 IR을 쓸때 무조건!!!<a>태그에 IR을 써야한다
+  -마우스 오버시 이미지 교체 효과를 쉽게 줄 수 있다
+ex)
+  a{display: block; width: 224px; height: 54px;
+                text-indent: -1000px; overflow: hidden;
+                background: url(./logo.jpg);
