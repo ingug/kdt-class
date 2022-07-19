@@ -10,6 +10,8 @@
   -모든 각각의 폼 요소들은 그에 상응하는 라벨(label)설명글을 가지고 있어야 한다(표준/접근성)
   -<label="해당폼요소의 ID값">대표텍스트</label> =>인라인요소
   -모두 인라인요소
+     -width/height/margin/padding =>블럭요소의 4대속성 =>display:block; 을 적용하지 않아도 사용할 수 있다
+  -TAB focus를 가지고 있다(<a>/<form>요소/<button>)
 
 -<input type="text"> =>일반 텍스트입력상자
 -<input type="pssword"> =>패스워드 입력상자
@@ -39,7 +41,48 @@
   
  -전화번호 텍스트  라벨을 화면에서 안보이게 하는 방법
   ex) .hidden{position: absolute; left: -1000%; top: 0; 
-         display: block; width: 1px; height: 1px; color: #fff; overflow: hidden;}
-  
+         display: block; width: 1px; height: 1px; color: #fff; overflow: hidden;}     
+ 
+버튼
+ -<input>보다는 ui를 표현하는 방법이 다양하다
+   <button type="submit">전 송</button>   =>전송버튼(폼에전송)
+   <button type="reset">다시쓰기</button>   =>입력취소/다시쓰기
+   <button type="button">확인</button>       일반버튼
+   
+-콘텐츠 UI를 그풉핑 할때 사용한다
+-<fieldset>  =>블럭요소
+   <legend>입력양식</legend>  =>인라인요소
+   다양한 콘텐츠 UI
+ </fieldset>
+ _____________________________________________________
+ -<iframe>
+ -블럭요소
+ -특정영역에 다른 웹 문서를 불러올 수 있다/교체할 수 있다
+ -속성
+   -src="불러올 서브페이지의 경로"
+   -name="아이프레임명"   =>target="name값"
+   -width/height =>크기설정
+   
+ ___________________________________________________
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
   
   
