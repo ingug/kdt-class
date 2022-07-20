@@ -43,9 +43,17 @@
           뉴스룸/공지사항/소식 -고정
           
  ______________________________________________________________________
- 서브시안
+ 서브시안 계획
           header-visual-nav(h3)-content(title area(경로)-content area)-footer
- 
+    w1200,h1200
+    백그라운드 색채우기 
+    헤어, dtrl+c  ctrl+shift+v
+    푸터  ctrl+v
+    비주얼이미지 사이즈 w2000px  h400~500px 
+    컨텐츠제목   font size 45~50px 3.125em/bold
+    컨텐츠 기본 텍스트 16px/18px   줄간격2em
+    
+    셀렉션 캔버스 
    
    
    
