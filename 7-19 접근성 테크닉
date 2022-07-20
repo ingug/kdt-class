@@ -6,3 +6,11 @@ ex)
   a{display: block; width: 224px; height: 54px;
                 text-indent: -1000px; overflow: hidden;
                 background: url(./logo.jpg);
+ 
+ <IS> Image Sprite(이미지 분할기법)
+   -IR기법과 함께 사용된다
+   -배경으로 사용할 이미지를 가각 분리하여 저장하지 않고 하나의 이미지로 사용하는 기법
+   -background-position으로 사용할 이미지만 위치를 잡아서 처리하는 방법
+   -브라우저의 로딩 속도를 향상 시킬 수 있다 / 이미지 관리에 용이하다
+___________________________________________________________________________________________
+<Skip Navigation> (바로가기 메뉴/점프메뉴)
